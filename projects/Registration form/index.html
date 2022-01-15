@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<script src="jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" charset="utf-8"></script>
+	<script>
+
+	$(function() {
+	$("form[name='form']").validate({
+		errorClass: "error",
+
+		rules: {
+						name: "required",
+						date:"required",
+
+			email: {
+				required: true,
+				email: true
+			},
+
+			password: {
+				required: true,
+				minlength: 5
+			},
+
+			mobile: {
+				required: true,
+				minlength: 10
+			}
+		},
+
+		messages: {
+			name: "Please enter your firstname",
+			date: "Please enter a date",
+			password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long"
+			},
+
+			mobile: {
+				required: "Enter mobile number",
+				minlength: "maximun 10 digit number"
+			},
+
+			email: "Please enter a valid email address"
+		},
+
+		submitHandler: function(form) {
+			form.submit();
+		}
+	});
+	});
+
+	</script>
+
+			<form method="post" name="form" class="formvalid col-md-6 mx-auto p-5 rounded-lg">
+				<h1 "display-4"><b>Registration Form</h1></b>
+					<br>
+					<div class="form-group">
+						Name:
+						<input type="text" name="name" class="form-control" placeholder="Enter Your Fullname">
+					</div>
+
+					<div class="form-group">
+						Email:
+						<input type="email" name="email" class="form-control" placeholder="Enter Your Email">
+					</div>
+
+
+					<div class="form-group">
+						Password:
+						<input type="password" name="password" class="form-control" placeholder="Enter Password">
+					</div>
+
+
+					<div class="form-group">
+						Mobile No:
+						<input type="number" name="mobile" class="form-control" placeholder="Enter Mobile No">
+					</div>
+
+
+					<div class="form-group">
+						Date Of Birth:
+						<input type="date" name="date" class="form-control">
+					</div>
+
+
+
+					<div class="form-group text-center">
+						<input type="Submit" class="btn btn-primary btn-lg" value="Submit">
+					</div>
+
+				</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body{
+	background-image:url(photo/10.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+		background-position: center;
+		padding: 50px;
+		font-size: 20px;
+}
+
+.error{
+	color:red;
+}
+
+.formvalid{
+	background: #A1FFCE;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*background: #FFAFBD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+/*
